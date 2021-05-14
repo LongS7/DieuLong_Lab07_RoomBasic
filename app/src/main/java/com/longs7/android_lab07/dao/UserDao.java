@@ -14,9 +14,6 @@ public interface UserDao {
     @Query("select * from User")
     List<User> getAllUser();
 
-    @Query("select * from User where id = :id")
-    User getUserById(int id);
-
     @Query("select * from User order by id desc")
     User getLastUser();
 
